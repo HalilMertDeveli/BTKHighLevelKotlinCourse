@@ -31,10 +31,7 @@ class FoodDetailFragment : Fragment() {
             println("Food Id is $argumentValue")
         }
 
-        foodDetailToFoodListFragment.setOnClickListener {
-            val root = FoodDetailFragmentDirections.actionFoodDetailFragmentToFoodListFragment()
-            Navigation.findNavController(it).navigate(root)
-        }
+
 
 
         super.onViewCreated(view, savedInstanceState)
