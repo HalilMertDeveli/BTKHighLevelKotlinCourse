@@ -27,7 +27,7 @@ class FoodListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         foodListToFoodDetailButton.setOnClickListener {
-            val root = FoodListFragmentDirections.actionFoodListFragmentToFoodDetailFragment(3)
+            val root = FoodListFragmentDirections.actionFoodListFragmentToFoodDetailFragment(2)
             Navigation.findNavController(it).navigate(root)
 
         }
